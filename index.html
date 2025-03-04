@@ -11,64 +11,83 @@
 </head>
 <body>
     <header>
-        <div id="Logo">
-            <img src="./assets/Logo.svg" alt="Travelgam">
-        </div>
-        <div id="explore">
-            <img src="./assets/MagnifyingGlass.svg" alt="Lupa">
-            <p>Explorar</p>
-            <p>Minhas viagens</p>
-            <img id="profile-photo-header" src="./assets/Foto Perfil.jpg" alt="">
+        <div class="bg-surface-color">
+            <nav class="container">
+                <a href="#" id="Logo">
+                    <img src="./assets/Logo.svg" alt="Travelgam">
+                </a>
+                <ul id="explore">
+                    <li>
+                        <a href="#"><img src="./assets/icons/MagnifyingGlass.svg" alt="Lupa"></a>
+                    </li>
+                    <li>
+                        <a href="#">Explorar</a>
+                    </li>
+                    <li>
+                        <a href="#">Minhas viagens</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./assets/images/Foto Perfil.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <section class="personal-infos">
-            <div class="personal-sumary">
-                <img id="profile-photo-main" src="./assets/Foto Perfil.jpg" alt="">
-                <div class="infos">
-                    <h1>Weyne Siqueira</h1>
-                    <p>Amante de viagens, cultura e gastronomia. 🌍✈️  
-                    Aqui compartilho as histórias registradas em cada clique, explorando cantinhos fascinantes do nosso planeta a partir da movimentada cidade de São Paulo. 🏙️📸</p>
+        <div class="bg-surface-color">
+            <section class="container">
+            <div class="personal-infos">
+                <div class="personal-sumary">
+                    <img id="profile-photo-main" src="./assets/images/Foto Perfil.jpg" alt="">
+                    <div class="infos">
+                        <h1>Weyne Siqueira</h1>
+                        <p>
+                            Amante de viagens, cultura e gastronomia. 🌍✈️
+                            Aqui compartilho as histórias registradas em cada 
+                            clique, explorando cantinhos fascinantes do nosso 
+                            planeta a partir da movimentada cidade de São Paulo. 
+                            🏙️📸
+                        </p>
+                    </div>
                 </div>
+                <ul class="travel-sumary">
+                    <li class="pin">
+                        <img src="./assets/icons/MapPin.svg" alt="MapPin">
+                        <span>Sobral, Ceará</span>
+                    </li>
+                    <li class="air-plane">
+                        <img src="./assets/icons/AirplaneTilt.svg" alt="AirPlane">
+                        <span>37 países</span>
+                    </li>
+                    <li class="number-pictures">
+                        <img src="./assets/icons/Image.svg" alt="Picture">
+                        <span>240 fotos</span>
+                    </li>
+                </ul>
             </div>
-            <div class="travel-sumary">
-                <div class="pin">
-                    <img src="./assets/MapPin.svg" alt="MapPin">
-                    <p>Sobral, Ceará</p>
-                </div>
-                <div class="air-plane">
-                    <img src="./assets/AirplaneTilt.svg" alt="AirPlane">
-                    <p>37 países</p>
-                </div>
-                <div class="number-pictures">
-                    <img src="./assets/Image.svg" alt="Picture">
-                <p>240 fotos</p>
-                </div>
-            </div>
-        </section>
-        <section class="pictures">
-            <img src="assets/Image 01.png" alt="img1">
-            <img src="assets/Image 02.png" alt="img2">
-            <img src="assets/Image 03.png" alt="img3">
-            <img src="assets/Image 04.png" alt="img4">
-            <img src="assets/Image 05.png" alt="img5">
-            <img src="assets/Image 06.png" alt="img6">
-            <img src="assets/Image 07.png" alt="img7">
-            <img src="assets/Image 08.png" alt="img8">
-            <img src="assets/Image 09.png" alt="img9">
-            <img src="assets/Image 10.png" alt="img10">
-            <img src="assets/Image 11.png" alt="img11">
-            <img src="assets/Image 12.png" alt="img12">
-        </section>
+            </section>
+        </div>
+        <div class="container">
+            <section class="pictures">
+                <img src="assets/images/Image 01.png" alt="img1">
+                <img src="assets/images/Image 02.png" alt="img2">
+                <img src="assets/images/Image 03.png" alt="img3">
+                <img src="assets/images/Image 04.png" alt="img4">
+                <img src="assets/images/Image 05.png" alt="img5">
+                <img src="assets/images/Image 06.png" alt="img6">
+                <img src="assets/images/Image 07.png" alt="img7">
+                <img src="assets/images/Image 08.png" alt="img8">
+                <img src="assets/images/Image 09.png" alt="img9">
+                <img src="assets/images/Image 10.png" alt="img10">
+                <img src="assets/images/Image 11.png" alt="img11">
+                <img src="assets/images/Image 12.png" alt="img12">
+            </section>
+        </div>
     </main>
-    <footer>
-        <div>
-            <p>Travelgram © 2024</p>
-        </div>
-        <div>
-            <p>Termos de uso</p>
-            <p>Política de privacidade</p>
-        </div>
+    <footer class="container">
+        <span>Travelgram © 2024</span>
+        <span>Termos de uso</span>
+        <span>Política de privacidade</span>
     </footer>
 </body>
 </html>

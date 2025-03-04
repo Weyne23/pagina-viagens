@@ -1,98 +1,11 @@
 @import url("global.css");
+@import url("nav.css");
+@import url("personal-infos.css");
+@import url("pictures.css");
+@import url("footer.css");
 
-#profile-photo-header {
-    height: 40px;
-    weigth: 40px;
-    border-radius: 100%;
-}
-
-#profile-photo-main {
-    height: 176px;
-    weigth: 176px;
-    border-radius: 100%;
-    flex-basis: 120%;
-}
-
-#profile-photo-main p {
-
-}
-
-#explore {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.personal-sumary {
-    display: flex;
-    width: 592px;
-    height: 176px;
-    gap: 30px;
-}
-
-.personal-infos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-surface);
-    padding: 32px;
-}
-
-.personal-infos p {
-    font-size: 14px
-}
-
-.travel-sumary {
-    display: flex;
-    height: 104px;
-    weigth: 280px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content:baseline;
-    justify-content: space-between;
-}
-
-.travel-sumary div{
-    display: flex;
-    height: 32px;
-    align-items: center;
-    gap: 5px;
-}
-
-.pictures {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 24px 8px;
-}
-
-.pictures img {
-    width: 286px;
-    height: 286px;
-}
-
-header {
-    display: flex;
-    weigth: 60px;
-    justify-content: space-between;
-    align-items: space-between;
-    gap: 32px;
-    background-color: var(--color-surface)
-}
-
-header div {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-footer {
-    display: flex;
-    padding: 24px 32px;
-    justify-content: space-between;
-}
-
-footer div {
-    display: flex;
-    gap: 20px;
+body {
+    font: var(--text);
+    color: var(--color-text-secondary);
+    background-color: var(--color-background);
 }

@@ -1,0 +1,54 @@
+.personal-infos {
+    padding-block: 32px;
+    font: var(--text-mb);
+    align-items: center;
+}
+
+.personal-sumary {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.personal-sumary > div {
+    max-width: 384px;
+}
+
+.personal-sumary h1 {
+    font: var(--text-lg);
+    color: var(--color-text-primary);
+    margin-bottom: 8px;
+}
+
+.personal-sumary p {
+    font: var(--text-mb);
+}
+
+.personal-infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.travel-sumary {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 280px;
+}
+
+.travel-sumary li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.personal-sumary:first-child img {
+    height: 176px;
+    width: 176px;
+    object-fit: cover;
+    border-radius: 50%;
+}
