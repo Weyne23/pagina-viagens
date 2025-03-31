@@ -5,9 +5,8 @@
 }
 
 .personal-sumary {
-    display: flex;
-    align-items: center;
     gap: 32px;
+    grid-auto-columns: 11rem auto;
 }
 
 .personal-sumary > div {
@@ -24,18 +23,18 @@
     font: var(--text-mb);
 }
 
-.personal-infos {
-    display: flex;
-    justify-content: space-between;
+.travel-sumary {
+    display: grid;
+    place-content: center right;
 }
 
-.travel-sumary {
+.travel-sumary ul {
     list-style: none;
 
     display: flex;
     flex-direction: column;
     gap: 16px;
-
+    justify-content: center;
     width: 280px;
 }
 
@@ -51,4 +50,32 @@
     width: 176px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+@media (width < 50em) {
+    .personal-sumary h1 {
+        font: var(--text-lg-mob);
+        color: var(--color-text-primary);
+        margin-bottom: 8px;
+    }
+
+    .personal-sumary:first-child img{
+        height: 7.5rem;
+        width: 7.5rem;
+    }
+
+    .personal-infos {
+        gap: 2rem;
+        & > div {
+            margin-right: auto;
+        } 
+    }
+
+    .personal-sumary {
+        gap: 16px;
+    }
+
+    .even-columns {
+        grid-auto-columns: 1fr;
+    }
 }

@@ -9,6 +9,7 @@
     
     --font-family: "Poppins", sans-serif;
     --text-lg: bold 32px/125% var(--font-family);
+    --text-lg-mob: bold 24px/125% var(--font-family);
     --text: 16px/150% var(--font-family);
     --text-md: 14px/170% var(--font-family);
     --text-sm: 12px/170% var(--font-family);
@@ -38,4 +39,36 @@ a:hover {
 
 .bg-surface-color {
     background-color: var(--color-surface)
+}
+
+/* Utility */
+
+.desktop-only {
+    display: inherit;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.even-columns {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+/* Mobile */
+@media (width < 50em) {
+    .desktop-only {
+        display: none;
+    }
+
+    .even-columns {
+        display: grid;
+        grid-auto-flow: row;
+    }
 }

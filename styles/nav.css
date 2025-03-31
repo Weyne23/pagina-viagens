@@ -11,13 +11,18 @@ nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
     padding-block: 8px;
+}
+
+nav ul li {
+    padding: 0.25rem;
 }
 
 nav ul li:last-child img {
     width: 40px;
     height: 40px;
+    padding: 0;
     object-fit: cover;
     border-radius: 50%;
 }
