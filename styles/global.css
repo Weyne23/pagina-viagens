@@ -71,4 +71,8 @@ a:hover {
         display: grid;
         grid-auto-flow: row;
     }
+
+    .container {
+        padding-inline: 16px;
+    }
 }
