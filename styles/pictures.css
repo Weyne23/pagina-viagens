@@ -10,3 +10,17 @@
     height: 286px;
     object-fit: cover;
 }
+
+@media (width < 50em){
+    .pictures {
+        display: grid;
+        place-content: center;
+        padding-block: 24px;
+        gap: 16px;
+    }
+
+    .pictures img {
+        width: 328px;
+        height: 328px;
+    }
+}

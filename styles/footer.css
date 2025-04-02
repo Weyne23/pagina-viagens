@@ -6,6 +6,26 @@ footer {
     font: 14px/150% var(--font-family);
 }
 
-footer span:nth-child(1) {
+footer div:nth-child(1) {
     margin-right: auto;
+}
+
+@media (width < 50em) {
+    footer {
+        display: grid;
+        justify-items: center;
+        gap: 16px;
+        padding-block: 16px;
+    }
+
+    footer div:nth-child(1) {
+        margin-right: 0;
+    }
+
+    footer div:nth-child(2) {
+        justify-items: center;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
 }
